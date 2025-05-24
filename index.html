@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Językowo.pl - Strona główna</title>
+  <meta name="description" content="Językowo.pl - narzędzia do korekty pisowni online.">
+  <meta name="keywords" content="korektor pisowni, poprawa tekstu, pisownia online, gramatyka">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:; color:#cc770e; }
+    header { background:#631712; color:#cc770e; padding:20px; text-align:center; }
+    nav { background:#e0e0e0; padding:10px 0; text-align:center; }
+    nav a { margin: 0 15px; text-decoration:none; color:#333; font-weight:bold; }
+    nav a:hover { color:#cc770e; }
+    main { max-width: 800px; margin: 20px auto; background:#631712; padding:20px; border-radius:8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    footer { background:#631712; color:#cc770e; text-align:center; padding:15px; margin-top:20px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Językowo.pl</h1>
+  <p>Twoje narzędzie do korekty pisowni online</p>
+</header>
+
+<nav>
+  <a href="index.html">Strona główna</a>
+  <a href="korektor.html">Korektor pisowni</a>
+  <a href="polityka.html">Polityka prywatności</a>
+  <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<main>
+  <div style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <!-- Lewy GIF -->
+    <img src="https://media.tenor.com/CnP64S7lszwAAAAi/meme-cat-cat-meme.gif"
+         alt="GIF lewy"
+         style="width: 100px; border-radius: 8px;" />
+
+    <!-- Tekst główny -->
+    <div style="flex: 1; text-align: center;">
+      <h2>Witamy na Językowo.pl</h2>
+      <p>Skorzystaj z naszego korektora pisowni, aby poprawić swój tekst szybko i skutecznie.</p>
+      <p>Wybierz funkcję z menu i zacznij pisać lepiej już teraz!</p>
+    </div>
+
+    <!-- Prawy GIF -->
+    <img src="https://media.tenor.com/CnP64S7lszwAAAAi/meme-cat-cat-meme.gif" alt="GIF prawy" style="width: 100px; border-radius: 8px;" />
+  </div>
+</main>
+
+<div id="cookieBanner" style="position: fixed; bottom: 0; left: 0; right: 0; background:#631712; color: #cc770e; padding: 15px; text-align: center; display: none;">
+  Ta strona używa plików cookies w celu poprawy działania i wyświetlania reklam. <button onclick="zaakceptujCookies()" style="margin-left: 15px; padding: 5px 10px;">Akceptuję</button>
+</div>
+
+<script>
+  function zaakceptujCookies() {
+    document.cookie = "cookies_accepted=true; path=/; max-age=" + 60*60*24*365;
+    document.getElementById("cookieBanner").style.display = "none";
+  }
+
+  window.onload = function() {
+    if (!document.cookie.includes("cookies_accepted=true")) {
+      document.getElementById("cookieBanner").style.display = "block";
+    }
+  }
+</script>
+
+<footer>
+  &copy; 2025 Językowo.pl – Wszystkie prawa zastrzeżone
+  <br>
+  Kontakt z Autorem
+  <br>
+  Email: dawidswierczy@gmail.com
+</footer>
+
+<!-- 3 gify pod stopką -->
+<div style="display: flex; justify-content: center; gap: 20px; padding: 20px; background: #f5f5f5;">
+  <img src="https://media.tenor.com/xUZ8mgiaB1sAAAAi/dancing-letter-letter-j.gif" alt="gif1" style="width: 120px;" />
+  <img src="https://media.tenor.com/A5a-G4IqGOQAAAAi/dancing-letter-letter-e.gif" alt="gif2" style="width: 120px;" />
+  <img src="https://media.tenor.com/dzk8rnKO_AUAAAAi/capital-letter-letter.gif" alt="gif3" style="width: 120px;" />
+  <img src="https://media.tenor.com/9zMHtfQLsjUAAAAi/capital-letter-letter.gif" alt="gif4" style="width: 120px;" />
+  <img src="https://media.tenor.com/LmhxtfZD95IAAAAi/dancing-letter-letter.gif" alt="gif5" style="width: 120px;" />
+  <img src="https://media.tenor.com/DtNdi4Bzj_UAAAAi/dancing-number-dancing-letter.gif" alt="gif6" style="width: 120px;" />
+  <img src="https://media.tenor.com/ANut9Jv7_fwAAAAi/capital-letter-letter.gif" alt="gif7" style="width: 120px;" />
+  <img src="https://media.tenor.com/DtNdi4Bzj_UAAAAi/dancing-number-dancing-letter.gif" alt="gif8" style="width: 120px;" />
+</div>
+
+</body>
+</html>
+
